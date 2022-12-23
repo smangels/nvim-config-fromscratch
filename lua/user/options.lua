@@ -35,6 +35,8 @@ local options = {
   scrolloff = 8,                           -- minimal number of screen lines to keep above and below the cursor
   sidescrolloff = 8,                       -- minimal number of screen columns either side of cursor if wrap is `false`
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  ai = true,
+  si = true
 }
 
 vim.opt.shortmess:append "c"
@@ -42,6 +44,7 @@ vim.opt.shortmess:append "c"
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]

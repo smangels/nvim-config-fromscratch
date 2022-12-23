@@ -76,3 +76,7 @@ keymap("n", "N", "Nzzzv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+local builtin = require("telescope.builtin")
+-- keymap("n", "<leader>ff", builtin.find_files, opts)
+-- keymap("n", "<leader>fg", builtin.find_grep, opts)
+
